@@ -39,7 +39,7 @@ def KMeans(X, y, k, max_iter=100, tol=1e-6):
     return centroids, labels, data
 
 #Definição do dataframe Iris Flowers
-df = pd.read_csv('datasets/IRIS.csv')
+df = pd.read_csv('IRIS.csv')
 X = df['sepal_length'].values
 y = df['sepal_width'].values
 

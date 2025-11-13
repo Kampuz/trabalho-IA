@@ -32,7 +32,7 @@ def knn_classifier(X_train, y_train, X_test, k):
     return np.array(y_pred)
 
 #Definição do dataframe Iris Flowers
-df = pd.read_csv('datasets/IRIS.csv')
+df = pd.read_csv('IRIS.csv')
 X = df.drop(columns=['species'])
 y = df['species']
 
