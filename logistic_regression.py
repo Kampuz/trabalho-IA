@@ -46,7 +46,7 @@ def sigmoid(z):
      return 1/ (1 + np.exp(-z))
     
 # tests a class against all others
-def train_binary(X, y, learning_rate=0.1, epochs=1000):
+def logistic_regresion_binary(X, y, learning_rate=0.1, epochs=1000):
     weights = np.zeros(X.shape[1])
 
     for i in range(epochs):
@@ -61,7 +61,7 @@ def train_binary(X, y, learning_rate=0.1, epochs=1000):
     
     return weights
 
-def logic_regression_multiclass(X_train, y_train, X_test, learning_rate=0.1, epochs=1000):
+def logistic_regression_multiclass(X_train, y_train, X_test, learning_rate=0.1, epochs=1000):
     classes = np.unique(y_train)
     all_weights = []
 
@@ -69,7 +69,7 @@ def logic_regression_multiclass(X_train, y_train, X_test, learning_rate=0.1, epo
     #for every class creates a model where 1 is current class and 0 is another class
     for c in classes:
         y_binary = (y_train == c).astype(int)
-        weights = train_binary(X_train, y_binary, learning_rate, epochs)
+        weights = logistic_regresion_binary(X_train, y_binary, learning_rate, epochs)
         all_weights.append(weights)
     
     # combinates all the weights, calculates the score and the prob
