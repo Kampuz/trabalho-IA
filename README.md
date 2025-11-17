@@ -17,4 +17,4 @@
     - [x] K-Means
     - [x] KNN Classifier
     - [x] KNN Regressor
-    - [] Neural Networks
+    - [X] Neural Networks
