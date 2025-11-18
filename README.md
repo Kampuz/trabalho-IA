@@ -12,9 +12,9 @@
 
 ## Modelos Implementados
 
-    [x] Decision Tree
-    [x] Logistic Regression
-    [x] K-Means
-    [x] KNN Classifier
-    [] KNN Regressor
-    [] Neural Networks
+    - [x] Decision Tree
+    - [x] Logistic Regression
+    - [x] K-Means
+    - [x] KNN Classifier
+    - [x] KNN Regressor
+    - [X] Neural Networks
